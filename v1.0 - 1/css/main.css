@@ -54,6 +54,7 @@ h4{
 }
 
 a{
+  text-decoration: none;
   color:#E65C42;
 }
 
@@ -113,11 +114,185 @@ cite {
   font-style: normal;
 }
 
+.infor{
+  text-align: center;
+}
+
+#location{
+  vertical-align: top;
+  margin-left: 10%;
+  display: inline-block;
+  width:30%;
+}
+
 /*
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
+
+#detail-button{
+  display:block;
+  width: 15%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#detail-button a{
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#detail-des{
+  width: 80%;
+  margin: 2em 10%;
+  padding: 1em;
+  border-color: #acacac;
+  border: 0.1em solid;
+}
+
+
+#detail-info-group{
+  display: flex;
+  width: 60%
+  margin: 2em 20%;
+}
+
+#detail-info{
+  flex-grow:1;
+  margin: 1% 10%
+}
+
+.detail-slide-show{
+  display: block;
+  width: 80%;
+  margin: 2% 10%;
+  padding: 1%;
+  background: #acacac;
+}
+
+.largeview{
+  display: block;
+  width: 80%;
+  margin: 2% 10%;
+}
+
+.largeview img{
+  display: block;
+  max-width: 100%;
+
+  width:auto;
+  height: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smallview{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align:center
+}
+
+.smallview img{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 1em 1em;
+}
+
+
+.property-card{
+  display: flex;
+  width: 90%;
+  margin: 2% 5%;
+  padding: 1%;
+  border: 0.1em solid;
+  border-color: #acacac;
+}
+
+#card-img{
+  flex-grow:3;
+}
+
+#card-infor{
+  flex-grow:4;
+  margin: 1% 5%
+}
+
+#card-button{
+  flex-grow:1;
+  margin: 2em 0;
+  padding: 1%;
+  text-align: center;
+}
+
+#line{
+  margin: 0.5em 0px;
+}
+
+#line h4,p{
+  display: inline;
+
+}
+#pagenum{
+  margin: 5% 2%;
+}
+
+#pagenum a{
+  margin: 1% 1%;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+label {
+  font-size: 20px;
+  text-align: center;
+  padding: 1em;
+  margin: 0.2em;
+  background: #E65C42;
+  color:#fff;
+  display: block;
+  position: relative;
+}
+
+input:checked + label {
+  background: #fff;
+  color:#E65C42;
+  border: 0.1em solid;
+  border-color:#E65C42;
+}
+
+#selecter-group{
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+#selecter{
+  width:30%;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+#label1{
+  flex-grow: 2;
+  width:90%;
+
+}
+
+
+#label2{
+  flex-grow:1;
+  width: 45%;
+}
+
+
 .menuImage{
   text-decoration: none;
 }
@@ -147,18 +322,27 @@ cite {
   padding: 0.5em 0.75em;
 }
 
+#main-nav{
+  margin: 1em auto;
+  text-align: center;
+  background: #E65C42;
+}
+
 .nav-main{
-  background: #fff;
+  background: #E65C42;
   display: inline-block;
+  color: #fff;
   width: 19%;
   font-size: 1.25em;
   text-decoration: none;
   text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .nav-main:hover, .nav-main:focus  {
-  background-color:#E65C42;
-  color: #FFF;
+  background:#fff;
+  color: #E65C42;
 }
 
 .button-nav {
@@ -218,21 +402,18 @@ input{
 
 .dropbtn{
   text-decoration: none;
-  background: #fff;
-  color:#E65C42;
+  color: : #fff;
+  background: :#E65C42;
   font-family: "Univers";
   font-weight: bold;
   font-style: normal;
 }
 
-.dropbtn:hover, .dropbtn:focus  {
-  background:#E65C42;
-  color: #FFF;
-}
-
 .dropdown-content a {
     float: none;
-    padding: 12px 16px;
+    font-size: 0.75em;
+    padding: 12px 0px;
+    margin: auto 0px;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -247,29 +428,66 @@ input{
 }
 
 .dropdown-content a:hover {
-    background-color:#E65C42;
+  background-color:#E65C42;
   color: #FFF;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    margin-top: 1em;
     width:18%;
     background: #fff;
     z-index: 1;
 }
 
+#filter select{
+  margin: 0px, 5%;
+  width: 20%;
+}
 
 /*
   COMBINED ELEMENTS -------------------
+
+
 */
-@media (max-width: 52em){
+
+@media (max-width: 70em){
+
+  #sales1,#sales2,#sales3 {
+    flex-grow: 1;
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-left: 10%;
+  }
+
+  #listing1,#listing2,#listing3,#listing4,#listing5,#listing6{
+    flex-grow: 1;
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-left: 10%;
+  }
+
+  #selecter{
+  width:40%;
+
+}
+
+  .footer{
+    margin-left: 25%;
+  }
+}
+
+
+@media (max-width: 55em){
   .nav-main{
     width:100%;
-    padding: 0.1em 0.5em;
-    margin-left: 10%;
+    padding-top: 0.2em;
+    padding-left: 10%;
     text-align: left;
   }
+
+
   .menuImage{
     width:100%;
     margin-left: 15%;
@@ -279,44 +497,31 @@ input{
     margin-left: 30%;
   }
 
-  
 
-  .box img{
-    margin: 5%;
-    max-width: 50%;
-    
-  }
+#selecter{
+  width:80%;
 
- .box figcaption{
-    margin-left: 25%;
-    text-align: left;
-  }
-
-  #sales1,#sales2,#sales3 {
-    flex-grow: 1;
-    flex-basis: 100%;
-    margin-left: 25%;
-  }
-
-  #listing1,#listing2,#listing3,#listing4,#listing5,#listing6{
-  margin-left: 25%;
 }
+
 .footer{
     margin-left: 15%;
   }
 
+  .dropdown-content{
+    position: relative;
+    width:100%;
+    background: #fff;
+    z-index: 1;
 }
 
-@media (max-width: 70em){
-  #listing1,#listing2,#listing3,#listing4,#listing5,#listing6{
-    flex-grow: 1;
-    flex-basis: 50%;
-  } 
-
-  .footer{
-    margin-left: 25%;
+.dropdown-content a{
+  padding-left: 10%;
+  text-align: left;
   }
+
+
 }
+
 
 /*  margin-bottom: -0.5em;
   height:69.75px;
@@ -343,14 +548,14 @@ flex-wrap: wrap;
 
 .box img{
   margin: 10%;
-  width: 80%;
+  width: 100%;
   max-height: 20%;
 }
 
 #sales1,#sales2,#sales3{
   flex-grow: 1;
   width: 30%;
-
+  max-width: 30%;
 }
 
 #hotlisting h2{
@@ -360,6 +565,7 @@ flex-wrap: wrap;
 #listing1,#listing2,#listing3,#listing4,#listing5,#listing6{
   flex-grow: 1;
   width: 30%;
+   max-width: 30%;
 }
 
 /*.Prod-list2{
