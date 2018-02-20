@@ -3,74 +3,89 @@
 
   <head>
     <title>Search</title>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" rel="stylesheet" >
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/flexbox.css" rel="stylesheet">
-    <link href="css/font.css" rel="stylesheet">
-
 
   </head>
 
+
   <body>
-    <section id="top">
-        <a class="menuImage" href="home.html">
-          <img src="img/logo.png" alt="logo">
-          <h1>Sunrise Realty</h1>
-        </a>
-        <div id="search">
-          <form>
-            <input type="text" area="Area" class="search-box">
-            <input type="submit" value="Search" class="button">
-          </form>
-        </div>
-    </section>
-      <div id="main-nav">
-          <a class="nav-main" href="home.html">Home</a>
-          <div class="nav-main" id="about">
-            <i class="dropbtn">About Us</i>
-            <div class="dropdown-content" id="aboutsub">
-              <a href="aboutCompany.html">About Company</a>
-              <a href="officialStatement.html">Official Statement</a>
-            </div>
-          </div>
-          <a class="nav-main" href="salesTeam.html">Sales Team</a>
-          <div class="nav-main" id="find">
-            <i class="dropbtn">Find Realty</i>
-            <div class="dropdown-content" id="findsub">
-              <a href="search.html">Search</a>
-              <a href="house.html">House</a>
-              <a href="apartment.html">Apartment</a>
-              <a href="townhouse.html">Townhouse</a>
-            </div>
-          </div>
-          <a class="nav-main" href="contactUs.html">Contact Us</a>
+    <section id="header">
+      <div id="headercont">
+      <div id="header1">
+          <a href="home.html">
+              <img src="img/logo.png" alt="logo">
+          </a>
       </div>
+      <div id="header2">
+        <table class="menu">
+        <tr>
+          <td><a href="aboutCompany.html">About Company</a></td>
+          <td><a href="search.html">Search</a></td>
+        </tr>
+        <tr>
+          <td><a href="officialStatement.html">Official Statement</a></td>
+          <td><a href="house.html">House</a></td>
+        </tr>
+        <tr>
+          <td><a href="salesTeam.html">Sales Team</a></td>
+          <td><a href="apartment.html">Apartment</a></td>
+        </tr>
+        <tr>
+          <td><a href="contactUs.html">Contact Us</a></td>
+          <td><a href="townhouse.html">Townhouse</a></td>
+        </tr>
+      </table>
+      </div>
+        <div id="header3">
+          <form>
+              <input type="text" area="Area" class="search-box">
+              <input type="submit" value=" Search " class="button">
+            </form>
+        </div>
+        <div id="header4">
+          <div class="nav-main" id="find">
+            <button type="button">Menu</button>
+            <div class="dropdown-content">
+              <a href="aboutCompany.html">About Company</a>
+                <a href="officialStatement.html">Official Statement</a>
+                <a href="salesTeam.html">Sales Team</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="search.html">Search</a>
+                <a href="house.html">House</a>
+                <a href="apartment.html">Apartment</a>
+                <a href="townhouse.html">Townhouse</a>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+    </section>
     <section>
 
       <h2 class="infor">Search</h2>
       <div id="selecter-group">
+        <div>
+        <h4> Select Type :</h4>
+      </div>
 		<div id="selecter">
-			<input type="radio" name="area-radio" id="switch0" checked /><label for="switch0" id="label1">House</label>
-			<input type="radio" name="area-radio1" id="switch1" /><label for="switch1" id="label2">Richmond</label>
-			<input type="radio" name="area-radio1" id="switch2" /><label for="switch2" id="label2">Burnaby</label>
-			<input type="radio" name="area-radio1" id="switch3" /><label for="switch3" id="label2">Vancouver</label>
-			<input type="radio" name="area-radio1" id="switch4" /><label for="switch4" id="label2">Surrey</label>
+
+			<input type="radio" name="area-radio1" id="switch0" checked /><label for="switch0" id="label1">House</label>
+			<input type="radio" name="area-radio1" id="switch1" /><label for="switch1" id="label1">Apartment</label>
+			<input type="radio" name="area-radio1" id="switch2" /><label for="switch2" id="label1">Townhouse</label>
 		</div>
+    <div>
+        <h4> Select Area :</h4>
+      </div>
 		<div id="selecter">
-			<input type="radio" name="area-radio" id="switch01" /><label for="switch01" id="label1">Apartment</label>
+
 			<input type="radio" name="area-radio2" id="switch11" /><label for="switch11" id="label2">Richmond</label>
 			<input type="radio" name="area-radio2" id="switch21" /><label for="switch21" id="label2">Burnaby</label>
 			<input type="radio" name="area-radio2" id="switch31" /><label for="switch31" id="label2">Vancouver</label>
 			<input type="radio" name="area-radio2" id="switch41" /><label for="switch41" id="label2">Surrey</label>
-		</div>
-		<div id="selecter">
-			<input type="radio" name="area-radio" id="switch02" /><label for="switch02" id="label1">Townhouse</label>
-			<input type="radio" name="area-radio3" id="switch12" /><label for="switch12" id="label2">Richmond</label>
-			<input type="radio" name="area-radio3" id="switch22" /><label for="switch22" id="label2">Burnaby</label>
-			<input type="radio" name="area-radio3" id="switch32" /><label for="switch32" id="label2">Vancouver</label>
-			<input type="radio" name="area-radio3" id="switch42" /><label for="switch42" id="label2">Surrey</label>
 		</div>
   </div>
 
@@ -89,164 +104,160 @@
       <div class="property-card">
         <img id="card-img" src="img/listing.png" alt="property image">
         <div id="card-infor">
-          <div id="line">
-            <h4>Price: </h4><p>$999,999</p>
-          </div>
-          <div id="line">
-            <h4>Area: </h4><p>Richmond</p>
-          </div>
-          <div id="line">
-            <h4>Address: </h4><p>123 No. 3 Road</p>
-          </div>
+          <table class="menu">
+        <tr>
+          <th>Price:</th>
+          <td>$999,999</td>
+          <th>Bedroom:</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>Area:</th>
+          <td>Richmond</td>
+          <th>Bathroom:</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Address:</th>
+          <td>123 No. 3 Road</td>
+          <th>Year:</th>
+          <td>2018</td>
+        </tr>
+      </table>
         </div>
-        <div id="card-infor">
-          <div id="line">
-            <h4>Bedroom: </h4><p>3</p>
-          </div>
-          <div id="line">
-            <h4>Bathroom: </h4><p>2</p>
-          </div>
-          <div id="line">
-            <h4>Year: </h4><p>2018</p>
-          </div>
-        </div>
-        <a id="card-button" href="detail.html" class="button-nav" >View Detail</a>
+        <a id="card-button" href="detail.html" class="button-nav" >Detail</a>
       </div>
-
       <div class="property-card">
         <img id="card-img" src="img/listing.png" alt="property image">
         <div id="card-infor">
-          <div id="line">
-            <h4>Price: </h4><p>$999,999</p>
-          </div>
-          <div id="line">
-            <h4>Area: </h4><p>Richmond</p>
-          </div>
-          <div id="line">
-            <h4>Address: </h4><p>123 No. 3 Road</p>
-          </div>
+          <table class="menu">
+        <tr>
+          <th>Price:</th>
+          <td>$999,999</td>
+          <th>Bedroom:</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>Area:</th>
+          <td>Richmond</td>
+          <th>Bathroom:</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Address:</th>
+          <td>123 No. 3 Road</td>
+          <th>Year:</th>
+          <td>2018</td>
+        </tr>
+      </table>
         </div>
-        <div id="card-infor">
-          <div id="line">
-            <h4>Bedroom: </h4><p>3</p>
-          </div>
-          <div id="line">
-            <h4>Bathroom: </h4><p>2</p>
-          </div>
-          <div id="line">
-            <h4>Year: </h4><p>2018</p>
-          </div>
-        </div>
-        <a id="card-button" href="detail.html" class="button-nav" >View Detail</a>
+        <a id="card-button" href="detail.html" class="button-nav" >Detail</a>
       </div>
-
       <div class="property-card">
         <img id="card-img" src="img/listing.png" alt="property image">
         <div id="card-infor">
-          <div id="line">
-            <h4>Price: </h4><p>$999,999</p>
-          </div>
-          <div id="line">
-            <h4>Area: </h4><p>Richmond</p>
-          </div>
-          <div id="line">
-            <h4>Address: </h4><p>123 No. 3 Road</p>
-          </div>
+          <table class="menu">
+        <tr>
+          <th>Price:</th>
+          <td>$999,999</td>
+          <th>Bedroom:</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>Area:</th>
+          <td>Richmond</td>
+          <th>Bathroom:</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Address:</th>
+          <td>123 No. 3 Road</td>
+          <th>Year:</th>
+          <td>2018</td>
+        </tr>
+      </table>
         </div>
-        <div id="card-infor">
-          <div id="line">
-            <h4>Bedroom: </h4><p>3</p>
-          </div>
-          <div id="line">
-            <h4>Bathroom: </h4><p>2</p>
-          </div>
-          <div id="line">
-            <h4>Year: </h4><p>2018</p>
-          </div>
-        </div>
-        <a id="card-button" href="detail.html" class="button-nav" >View Detail</a>
+        <a id="card-button" href="detail.html" class="button-nav" >Detail</a>
       </div>
-
       <div class="property-card">
         <img id="card-img" src="img/listing.png" alt="property image">
         <div id="card-infor">
-          <div id="line">
-            <h4>Price: </h4><p>$999,999</p>
-          </div>
-          <div id="line">
-            <h4>Area: </h4><p>Richmond</p>
-          </div>
-          <div id="line">
-            <h4>Address: </h4><p>123 No. 3 Road</p>
-          </div>
+          <table class="menu">
+        <tr>
+          <th>Price:</th>
+          <td>$999,999</td>
+          <th>Bedroom:</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>Area:</th>
+          <td>Richmond</td>
+          <th>Bathroom:</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Address:</th>
+          <td>123 No. 3 Road</td>
+          <th>Year:</th>
+          <td>2018</td>
+        </tr>
+      </table>
         </div>
-        <div id="card-infor">
-          <div id="line">
-            <h4>Bedroom: </h4><p>3</p>
-          </div>
-          <div id="line">
-            <h4>Bathroom: </h4><p>2</p>
-          </div>
-          <div id="line">
-            <h4>Year: </h4><p>2018</p>
-          </div>
-        </div>
-        <a id="card-button" href="detail.html" class="button-nav" >View Detail</a>
+        <a id="card-button" href="detail.html" class="button-nav" >Detail</a>
       </div>
-
       <div class="property-card">
         <img id="card-img" src="img/listing.png" alt="property image">
         <div id="card-infor">
-          <div id="line">
-            <h4>Price: </h4><p>$999,999</p>
-          </div>
-          <div id="line">
-            <h4>Area: </h4><p>Richmond</p>
-          </div>
-          <div id="line">
-            <h4>Address: </h4><p>123 No. 3 Road</p>
-          </div>
+          <table class="menu">
+        <tr>
+          <th>Price:</th>
+          <td>$999,999</td>
+          <th>Bedroom:</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>Area:</th>
+          <td>Richmond</td>
+          <th>Bathroom:</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Address:</th>
+          <td>123 No. 3 Road</td>
+          <th>Year:</th>
+          <td>2018</td>
+        </tr>
+      </table>
         </div>
-        <div id="card-infor">
-          <div id="line">
-            <h4>Bedroom: </h4><p>3</p>
-          </div>
-          <div id="line">
-            <h4>Bathroom: </h4><p>2</p>
-          </div>
-          <div id="line">
-            <h4>Year: </h4><p>2018</p>
-          </div>
-        </div>
-        <a id="card-button" href="detail.html" class="button-nav" >View Detail</a>
+        <a id="card-button" href="detail.html" class="button-nav" >Detail</a>
       </div>
-
       <div class="property-card">
         <img id="card-img" src="img/listing.png" alt="property image">
         <div id="card-infor">
-          <div id="line">
-            <h4>Price: </h4><p>$999,999</p>
-          </div>
-          <div id="line">
-            <h4>Area: </h4><p>Richmond</p>
-          </div>
-          <div id="line">
-            <h4>Address: </h4><p>123 No. 3 Road</p>
-          </div>
+          <table class="menu">
+        <tr>
+          <th>Price:</th>
+          <td>$999,999</td>
+          <th>Bedroom:</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>Area:</th>
+          <td>Richmond</td>
+          <th>Bathroom:</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Address:</th>
+          <td>123 No. 3 Road</td>
+          <th>Year:</th>
+          <td>2018</td>
+        </tr>
+      </table>
         </div>
-        <div id="card-infor">
-          <div id="line">
-            <h4>Bedroom: </h4><p>3</p>
-          </div>
-          <div id="line">
-            <h4>Bathroom: </h4><p>2</p>
-          </div>
-          <div id="line">
-            <h4>Year: </h4><p>2018</p>
-          </div>
-        </div>
-        <a id="card-button" href="detail.html" class="button-nav" >View Detail</a>
+        <a id="card-button" href="detail.html" class="button-nav" >Detail</a>
       </div>
+
 
     </div>
 
@@ -264,17 +275,48 @@
       </section>
 
 
-      <div class="footer">
-          <div id="footer-info">
-              <h4>Company Information</h4>
-              <p>TEL: 604-000-0000</p> </br>
-              <p>info@sunriserealty.ca</p>
-          </div>
-          <div id="qr" >
-              <img src="img/QRcode.jpeg" alt="qrcode">
-          </div>
+     <section id="footer">
+      <div id="footercont">
+        <table class="menu">
+        <tr>
+          <th>NAVIGATE</th>
+          <th>QUICK LINKS</th>
+          <th>STORE INFO</th>
+          <th>CONNECT</th>
+        </tr>
+        <tr>
+          <td><a href="aboutCompany.html">About Company</a></td>
+          <td><a href="house.html">Find House</a></td>
+          <td><a href="rmd.html">Richmond</a></td>
+          <td><a>Facebook</a></td>
+        </tr>
+         <tr>
+
+          <td><a href="officialStatement.html">Official Statement</a></td>
+          <td><a href="apartment.html">Find Apartment</a></td>
+          <td><a href="bby.html">Burnaby</a></td>
+          <td><a>Twitter</a></td>
+        </tr>
+         <tr>
+
+          <td><a href="salesTeam.html">Sales Team</a></td>
+          <td><a href="townhouse.html">Find Townhouse</a></td>
+          <td><a href="van.html">Vancouver</a></td>
+          <td><a>Pinterest</a></td>
+        </tr>
+         <tr>
+          <td><a href="search.html">Search</a></td>
+          <td></td>
+          <td><a href="surrey.html">Surrey</a></td>
+          <td><a>Google+</a></td>
+
+        </tr>
+      </table>
       </div>
-      <div id="cr">copyringt info</div>
+      <div>
+        <p id="cr">Copyright Sunrise Realty 2018</p>
+      </div>
+    </section>
 
   </body>
 </html>
