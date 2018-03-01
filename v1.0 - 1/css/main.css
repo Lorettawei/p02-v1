@@ -275,7 +275,7 @@ figcaption{
 }
 
 .more{
-	width:30%;
+	width:35%;
 	margin-top: 2em;
 	margin-bottom: 4em;
 	margin-left: auto;
@@ -312,6 +312,7 @@ figcaption{
 	width:70%;
 	margin-left: auto;
 	margin-right: auto;
+  text-align: center;
 	border-bottom: 0.05em solid #5c5c5c;
 }
 .menu1{
@@ -548,12 +549,41 @@ h3{
 #detail-info table{
 width: 100%;
 }
+
+.grid-1, .grid-2, .grid-3, .grid-4{
+display: inline-block;
+  text-align: center;
+  background-color: #D1D3D4;
+  margin-bottom: 0.2em;
+  padding: 0.1em;
+  margin-left: 0em;
+  margin-right: 0em;
+}
+.grid-1{
+	width: 100%;
+}
+  .grid-2 {
+    width: 49%;
+  }
+
+  .grid-3 {
+    width: 32%;
+  }
+
+  .grid-4{
+    width: 24%;
+  }
+
+
 @media(max-width: 90em){
 .location{
 	display: inline-block;
 	width: 28%;
 	margin: 0em 2%;
 }
+  .grid-4{
+    width: 32%;
+  }
 }
 @media (max-width: 82em) {
 
@@ -631,6 +661,10 @@ font-size: 1em;
 	margin: 0em 2%;
 }
 
+  .grid-3 {
+    width: 49%;
+  }
+
 
 
 }
@@ -640,6 +674,10 @@ font-size: 1em;
 	width: 45%;
 	margin: 0em 2%;
 }
+
+  .grid-4{
+    width: 49%;
+  }
 }
 
 
@@ -747,6 +785,10 @@ label {
 	font-size: 0.75em;
 }
 
+.grid-1, .grid-2, .grid-3, .grid-4{
+	width: 100%;
+}
+
 }
 
 @media(max-width: 45em){
@@ -754,4 +796,66 @@ label {
 	display: inline-block;
 	width: 90%;
 	margin: 0em 2%;
+}
+}
+
+.center p,h4,code,form,h5,h2,h3,#pagenum,.box,ul,h1{
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: sans-serif;
+}
+
+.center #header5{
+	background-color: #203959;
+	margin-left: 10%;
+}
+
+.center .flexbox{
+	text-align: center;
+	margin-left: 0em;
+	display: inline-block;
+	width: 90%;
+}
+
+
+.Color1{
+	color:#fff;
+	padding: 0.8em;
+	margin-bottom: 1em;
+	background-color: #203959;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.Color2{
+	color:#fff;
+	padding: 0.8em;
+	margin-bottom: 1em;
+	background-color: #25292a;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.Color3{
+	color:#fff;
+	padding: 0.8em;
+	margin-bottom: 1em;
+	background-color: #E65C42;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.Color4{
+	color:#fff;
+	padding: 0.8em;
+	margin-bottom: 1em;
+	background-color: #5c5c5c;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.Color5{
+	color:#fff;
+	padding: 0.8em;
+	margin-bottom: 1em;
+	background-color: #f9f9f9;
+	margin-left: 10%;
+	margin-right: 10%;
 }
