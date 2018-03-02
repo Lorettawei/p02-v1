@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>P02 - Style Guide Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet" >
+    <link href="css/guide.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1 class="center">Sunrise Realty: Style Guide</h1>
+
+<div class="center">
+    <p>Style Guide for Sunrise Realty, a realty business company. </p>
+</div>
+    <nav class="center">
+
+      <p>
+        On this page:
+      </p>
+      <ul>
+        <li>
+          <a href="#interactive_elements">Interactive Elements</a>
+        </li>
+        <li>
+          <a href="#text_elements">Text Elements</a>
+        </li>
+        <li>
+          <a href="#combined_elements">Combined Elements</a>
+        </li>
+      </ul>
+
+      <p>Other pages:</p>
+      <ul>
+        <li><a href="styleguide.html">Style Guide</a>
+        <li><a href="citation.html">Citations</a>
+      </ul>
+
+    </nav>
+
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section class="center">
+
+        <h2>Navigation Button</h2>
+
+        <h4>CSS selector:</h4>
+        <p >.more</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class="more"&gt;
+        &lt;a href="#" class="more"&gt;Default button&lt;/a&gt;
+        &lt;/div&gt;
+      </code>
+
+
+        <h4>Rendered element:</h4>
+        <div class="more" >
+        <a href="#" >Default button</a>
+        </div>
+
+      </section>
+
+     <section class="center">
+        <h2>In-text link</h2>
+        <h4>CSS selector:</h4>
+        <p>#pagenum</p>
+        <h4>Sample code:</h4>
+        <code>&lt;div id="pagenum"&gt;&lt;a href="#"&gt;1 2 3 4 5 6&lt;/a&gt;&lt;/div&gt;</code>
+        <h4>Rendered element:</h4>
+        <div id="pagenum"> <a href="#">1 2 3 4 5 6</a> </div>
+
+      </section>
+
+      <section class="center">
+        <h2>Submit/Reset Buttons</h2>
+        <h4>CSS selector:</h4>
+        <p>.button</p>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;</code>
+        <h4>Rendered element:</h4>
+        <p><a href="#" class ="button">Submit</a></p>
+      </section>
+
+      <section class="center">
+        <h2>Text Input Field</h2>
+        <h4>CSS selector:</h4>
+        <p>.search-box</p>
+        <h4>Sample code:</h4>
+        <code>&lt;form&gt;Area:&lt;input type="text" area="Area" class="search-box"&gt;&lt;form&gt;</code>
+        <h4>Rendered element:</h4>
+        <form><label for="Area">Area:  </label><input type="text" area="Area" id="Area" class="search-box"></form>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section class="center">
+        <h2>Headings</h2>
+        <h4>CSS selector:</h4>
+        <p>h2,h3,h4,h5</p>
+        <h4>Sample code:</h4>
+        <code>&lt;h2&gt;House Lists&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;House Lists&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;House Lists&lt;/h4&gt;</code>
+        <code>&lt;h5&gt;House Lists&lt;/h5&gt;</code>
+        <h4>Rendered element:</h4>
+                <h2 class="textstyle">House Lists</h2>
+                <h3 class="textstyle">House Lists</h3>
+                <h4 class="textstyle">House Lists</h4>
+                <h5 class="textstyle">House Lists</h5>
+      </section>
+
+      <section class="center">
+        <h2>Paragraphs</h2>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Sunrise Realty was established in November, 2012.&lt;p&gt;</code>
+        <h4>Rendered element:</h4>
+        <p>Sunrise Realty was established in November, 2012. Our head office is in Richmond, BC, and we are rapidly expanding our business to areas including Vancouver, Burnaby and beyond. As of October 2015, New Coast Realty has 422 associates, including the management team, marketing staff and realtors. New Coast Realty’s scope of business includes real estate investment, buying and selling of residential and commercial properties, property management, investment consultation, realtor licensing exam training and preparation, and real estate marketing strategy training. </p>
+      </section>
+
+      <!-- <section class="center">
+        <h2>Bulleted Lists</h2>
+        <h4>CSS selector:</h4>
+        <p>ul</p>
+        <h4>Sample code:</h4>
+        <code>&lt;ul&gt;
+              &lt;li&gt;House&lt;/li&gt;
+              &lt;li&gt;Condo&lt;/li&gt;
+              &lt;li&gt;Townhouse&lt;/li&gt;
+              &lt;/ul&gt;</code>
+         <h4>Rendered element:</h4>
+         <ul>
+           <li>House</li>
+           <li>Condo</li>
+           <li>Townhouse</li>
+
+         </ul>
+      </section> -->
+
+      <!-- <section class="center">
+        <h2>Numbered Lists</h2>
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;
+              &lt;li&gt;House&lt;/li&gt;
+              &lt;li&gt;Condo&lt;/li&gt;
+              &lt;li&gt;Townhouse&lt;/li&gt;
+              &lt;/ol&gt;</code>
+         <h4>Rendered element:</h4>
+         <ol>
+           <li>House</li>
+           <li>Condo</li>
+           <li>Townhouse</li>
+         </ol>
+      </section> -->
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section class="center">
+        <h2>Main Navigation</h2>
+        <h4>CSS selector:</h4>
+        <p>#header5 .nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div id="header5"&gt;&lt;div class="nav"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="nav"&gt;&lt;a class="nav" href="#"&gt;About Us&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="nav"&gt;&lt;a class="nav" href="#"&gt;Sales Team&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="nav"&gt;&lt;a class="nav" href="#"&gt;Find A Realty&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="nav"&gt;&lt;a class="nav" href="#"&gt;Contact Us&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <div id="header5">
+      <div class="nav"><a href="#">Home</a></div>
+      <div class="nav"><a href="#">About</a></div>
+      <div class="nav"><a href="#">Sales Team</a></div>
+      <div class="nav"><a class="nav-main" href="#">Find A Realty</a></div>
+      <div class="nav"><a class="nav-main" href="#">Contact Us</a></div>
+    </div>
+
+      </section>
+
+      <section class="center">
+        <h2>Product Listing</h2>
+        <h4>CSS selector:</h4>
+        <p>.box  .sales,.listing</p>
+        <h4>Sample code:</h4>
+        <code>&lt;div class="box"&gt;&lt;div class="sales"&gt;
+          &lt;figure&gt;
+          &lt;img src="img/Annawong.jpeg" alt="sales"&gt;
+          &lt;figcaption&gt;Anna Wong&lt;/figcaption&gt;
+          &lt;/figure&gt;
+          &lt;/div&gt;&lt;/div&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <div class="box">
+        <div class="sales">
+          <figure>
+            <img src="img/Annawong.jpeg" alt="sales">
+            <figcaption>Anna Wong</figcaption>
+          </figure>
+        </div>
+
+        </div>
+      </section>
+
+
+      <!-- Website Color Swatches -->
+      <section class="center">
+        <h2>Website Color Swatches</h2>
+        <h4>CSS selector:</h4>
+        <p>.Color1, .Color2, .Color3,.Color4,.Color5</p>
+        <h4>Sample code:</h4>
+
+        <code>&lt;div class="Color1"&gt;Header Color: #203959&lt;/div&gt;</code>
+        <code>&lt;div class="Color2"&gt;Footer Color: #25292a&lt;/div&gt;</code>
+        <code>&lt;div class="Color3"&gt;Button Color: #E65C42&lt;/div&gt;</code>
+        <code>&lt;div class="Color4"&gt;Text Color: #5c5c5c&lt;/div&gt;</code>
+        <code>&lt;div class="Color5"&gt;Image Background: #f9f9f9&lt;/div&gt;</code>
+        <h4>Rendered element:</h4>
+
+          <div class="Color1">Header Color: #203959</div>
+          <div class="Color2">Footer Color: #25292a</div>
+          <div class="Color3">Button Color: #E65C42</div>
+          <div class="Color4">Text Color: #5c5c5c</div>
+          <div class="Color5">Image Background: #f9f9f9</div>
+
+    </section>
+
+        <!-- Website Grid Structure -->
+        <section class="center">
+          <h3>The Grid Structure</h3>
+          <h4>CSS selector:</h4>
+          <p>.grid-1, .grid-2, .grid-3, .grid-4</p>
+          <h4>Sample code:</h4>
+          <code>&lt;div class="grid-1"&gt;&lt;p&gt;Grid1: &lt;/p&gt;&lt;/div&gt;</code>
+          <code>&lt;div class="grid-2"&gt;&lt;p&gt;Grid2: &lt;/p&gt;&lt;/div&gt;</code>
+          <code>&lt;div class="grid-3"&gt;&lt;p&gt;Grid3: &lt;/p&gt;&lt;/div&gt;</code>
+          <code>&lt;div class="grid-4"&gt;&lt;p&gt;Grid4: &lt;/p&gt;&lt;/div&gt;</code>
+          <h4>Rendered element:</h4>
+
+            <h5>Layout 1</h5>
+              <div class="flexbox">
+              <div class="grid-3"><p>logo</p></div>
+              <div class="grid-3"><p>name</p></div>
+              <div class="grid-3"><p>search</p></div>
+              <div class="grid-1"><p>menu</p></div>
+              <div class="grid-1"><p>banner</p></div>
+              <div class="grid-1"><p>heading</p></div>
+              <div class="grid-3"><p>sales</p></div>
+              <div class="grid-3"><p>sales</p></div>
+              <div class="grid-3"><p>sales</p></div>
+              <div class="grid-1"><p>heading</p></div>
+              <div class="grid-3"><p>property</p></div>
+              <div class="grid-3"><p>property</p></div>
+              <div class="grid-3"><p>property</p></div>
+              <div class="grid-3"><p>property</p></div>
+              <div class="grid-3"><p>property</p></div>
+              <div class="grid-3"><p>property</p></div>
+              <div class="grid-2"><p>footer</p></div>
+              <div class="grid-2"><p>footer</p></div>
+            </div>
+
+
+              <h5>Layout 2</h5>
+              <div class="flexbox">
+             <div class="grid-3"><p>logo</p></div>
+              <div class="grid-3"><p>name</p></div>
+              <div class="grid-3"><p>search</p></div>
+              <div class="grid-1"><p>menu</p></div>
+              <div class="grid-1"><p>banner</p></div>
+              <div class="grid-1"><p>heading</p></div>
+              <div class="grid-4"><p>location</p></div>
+              <div class="grid-4"><p>location</p></div>
+              <div class="grid-4"><p>location</p></div>
+              <div class="grid-4"><p>location</p></div>
+              <div class="grid-1"><p>footer</p></div>
+            </div>
+
+
+      </section>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+  </body>
+</html>
