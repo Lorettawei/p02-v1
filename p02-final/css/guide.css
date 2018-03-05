@@ -41,10 +41,8 @@ a {
   	color: #FFF;
   	background-color:  #E65C42;
   	border: 0.1em solid;
-  	border-color:  #E65C42;
   	border-radius: 0.25em;
   	text-decoration: none;
-  	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
 }
 
@@ -128,10 +126,8 @@ input{
   color: #FFF;
   background-color: #E65C42;
   border: 0.1em solid;
-  border-color: #E65C42;
   border-radius: 0.25em;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
@@ -289,10 +285,8 @@ figcaption{
 	color: #FFF;
   	background-color: #E65C42;
   	border: 0.1em solid;
-  	border-color: #E65C42;
   	border-radius: 0.25em;
   	text-decoration: none;
-  	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
 }
 
@@ -434,10 +428,8 @@ th {
 	color: #FFF;
   	background-color: #E65C42;
   	border: 0.1em solid;
-  	border-color: #E65C42;
   	border-radius: 0.25em;
   	text-decoration: none;
-  	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
 }
 

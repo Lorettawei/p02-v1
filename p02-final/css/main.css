@@ -41,15 +41,14 @@ a {
   	color: #FFF;
   	background-color:  #E65C42;
   	border: 0.1em solid;
-  	border-color:  #E65C42;
   	border-radius: 0.25em;
   	text-decoration: none;
-  	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
 }
 
 #header4 button:hover {
   background-color:#FFF;
+  border-color:  #E65C42;
   color: #E65C42;
 }
 
@@ -76,7 +75,7 @@ a {
 	color:#E65C42;
 	font-size: 2em;
 	width:50%;
-	margin-top: 0em;
+	margin-top: 1em;
 	vertical-align: top;
 	text-align: left;
 }
@@ -128,10 +127,8 @@ input{
   color: #FFF;
   background-color: #E65C42;
   border: 0.1em solid;
-  border-color: #E65C42;
   border-radius: 0.25em;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
@@ -245,7 +242,7 @@ h2{
   	border-bottom: 0.05em solid #A7A9AC;
 }
 
-#selecter-group{
+#erer-group{
 	margin-bottom: 2em;
 	}
 
@@ -290,10 +287,8 @@ figcaption{
 	color: #FFF;
   	background-color: #E65C42;
   	border: 0.1em solid;
-  	border-color: #E65C42;
   	border-radius: 0.25em;
   	text-decoration: none;
-  	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
 }
 
@@ -391,11 +386,11 @@ figcaption{
 	margin-bottom: 3em;
 }
 
-#pagenum{
+.pagenum{
   margin: 1em 2%;
 }
 
-#pagenum a{
+.pagenum a{
 	color: #E65C42;
   margin: 1% 1%;
 }
@@ -409,25 +404,26 @@ th {
   width: 90%;
   margin: 2% 5%;
   padding: 1%;
+  padding-bottom: 3%;
   border: 0.1em solid;
   border-color: #acacac;
 }
 
-#card-img{
+.card-img{
   height: 5em;
   width: 8em;
 }
 
-#card-infor{
+.card-infor{
   width: 60%;
   margin: 0em 5%
 }
 
-#card-infor table{
+.card-infor table{
   width: 100%;
 }
 
-#card-button{
+.card-button{
 	text-align: center;
 	height: 2em;
 	width: 10%;
@@ -435,14 +431,12 @@ th {
 	color: #FFF;
   	background-color: #E65C42;
   	border: 0.1em solid;
-  	border-color: #E65C42;
   	border-radius: 0.25em;
   	text-decoration: none;
-  	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
 }
 
-#card-button:hover {
+.card-button:hover {
   background-color:#FFF;
   border: 0.1em solid;
   border-color: #E65C42;
@@ -450,7 +444,7 @@ th {
   padding: 0.5em 0.75em;
 }
 
-#selecter{
+.selecter{
   display:flex;
   flex-wrap: wrap;
   margin-left: 5%;
@@ -460,7 +454,7 @@ input[type=radio]{
   display: none;
 }
 
-#selecter label {
+.selecter label {
   font-size: 1em;
   text-align: center;
   padding: 0.5em;
@@ -471,7 +465,7 @@ input[type=radio]{
   position: relative;
 }
 
-#selecter input:checked + label {
+.selecter input:checked + label {
   background: #fff;
   color:#E65C42;
   border: 0.1em solid;
@@ -716,14 +710,14 @@ font-size: 1em;
   display: inline-block;
   }
 
-#card-img{
+.card-img{
   	width: 80%;
   	height: 10em;
  	margin-left: 10%;
 	margin-right: 10%;
 }
 
-#card-infor{
+.card-infor{
   width: 80%;
   margin-left: auto;
 margin-right: auto;
@@ -733,7 +727,7 @@ margin-bottom: 2em;
 
 
 
-#card-button{
+.card-button{
 	font-size: 1em;
 	padding: 0.5em ;
 	width:40%;
@@ -754,4 +748,5 @@ label {
 	display: inline-block;
 	width: 90%;
 	margin: 0em 2%;
+}
 }
